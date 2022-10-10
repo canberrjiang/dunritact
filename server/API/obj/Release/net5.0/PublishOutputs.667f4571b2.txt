@@ -1,0 +1,16 @@
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\API.exe
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\appsettings.Development.json
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\appsettings.json
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\API.dll
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\API.deps.json
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\API.runtimeconfig.json
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\API.pdb
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\Mapster.dll
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\Mapster.Core.dll
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\Microsoft.OpenApi.dll
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\Newtonsoft.Json.dll
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\SendGrid.dll
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\StarkbankEcdsa.dll
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\jiangke\OneDrive - EY\Documents\react\dunriteact\server\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

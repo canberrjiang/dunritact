@@ -1,0 +1,156 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    transition: all 0.6s ease-in-out;
+    z-index: 1;
+}
+#active:checked ~ .wrapper {
+    right: 0;
+}
+
+.menuBulge__wrapper {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+}
+
+.menuBulge__control {
+    position: fixed;
+    display: block;
+    right: 0;
+    top: 0;
+    height: 800px;
+    width: 100px;
+}
+.menuBulge__wrapper .bulgeIcon {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.menu-btn {
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 10px);
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+.menu-btn span,
+.menu-btn:before,
+.menu-btn:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 40%;
+    border-bottom: 2px solid #000;
+    transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.menu-btn:before {
+    transform: translateY(-8px);
+}
+.menu-btn:after {
+    transform: translateY(8px);
+}
+
+.close {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: background 0.6s;
+}
+
+/* closing animation */
+#active:checked + .menu-btn span {
+    transform: scaleX(0);
+}
+#active:checked + .menu-btn:before {
+    transform: rotate(45deg);
+    border-color: #000;
+}
+#active:checked + .menu-btn:after {
+    transform: rotate(-45deg);
+    border-color: #000;
+}
+.wrapper ul {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+.wrapper ul li {
+    height: 10%;
+    margin: 15px 0;
+}
+.wrapper ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 30px;
+    color: #fff;
+    line-height: 50px;
+    margin: 5px 30px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.wrapper ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#active:checked ~ .wrapper ul li a {
+    opacity: 1;
+}
+.wrapper ul li a {
+    transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateX(100px);
+}
+#active:checked ~ .wrapper ul li a {
+    transform: none;
+    transition-timing-function: ease, cubic-bezier(0.1, 1.3, 0.3, 1);
+    transition-delay: 0.6s;
+    transform: translateX(-100px);
+}
+
+header a:link {
+    text-decoration: none;
+}
+
+header a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.mobile-close-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 2;
+    float: left;
+    padding: 5px;
+    margin: 20px 0px 0px 45px;
+}
